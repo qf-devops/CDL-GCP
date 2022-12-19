@@ -1,0 +1,10 @@
+1. create compute engine with init script:
+  init script:
+  sudo su
+  apt update
+  apt -y install apache2
+  sudo systemmctl start apache2
+  sudo systemctl enable apache2
+  echo "Hello World" > /var/www/html/index.html
+
+in mmanagemenbt section >> automation

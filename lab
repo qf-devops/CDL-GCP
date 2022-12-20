@@ -45,6 +45,8 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
 
 6. create gke cluster
    install kubectl command in your terminal or vm :  https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+      windows:  https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+     
    get gke cluster credentials ==> kubeconfig
    kubectl run n1 --image=nginx --port=80
    kubectl get pod

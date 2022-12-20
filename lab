@@ -26,14 +26,19 @@ in mmanagemenbt section >> automation
        docker swarm join (which generated in demo1 instance)
        
     demo1:
-       docker ndoe ls
+       docker node ls
        docker service create --name=n1 -p 81:80 nginx
        docker service ps n1
        dcoekr service scale n1=3
        docker service ps n1
        
        
-       
-       
-       
+4.
+   clone:
+     git clone https://github.com/qfitsolutions/docker.git
+       cd docker
+       docker stack deploy  -c stack-dc.yml mystack
+       docker stack ps mystack
+       docker stack services mystack
         
+ 

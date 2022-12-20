@@ -16,3 +16,24 @@ in mmanagemenbt section >> automation
    run docker run command to sgtart container:
      >docker run -itd -p 81:80 ubuntu/apache2
      
+     docker stop 297850facf0f
+     
+     docker run -itd -p 81:80 --name n1 nginx
+3. cretae 2nd vm
+    demo1:
+       docker sdwarm init
+     demo2:
+       docker swarm join (which generated in demo1 instance)
+       
+    demo1:
+       docker ndoe ls
+       docker service create --name=n1 -p 81:80 nginx
+       docker service ps n1
+       dcoekr service scale n1=3
+       docker service ps n1
+       
+       
+       
+       
+       
+        

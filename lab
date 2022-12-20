@@ -41,4 +41,7 @@ in mmanagemenbt section >> automation
        docker stack ps mystack
        docker stack services mystack
         
- 
+ 5. Cloud run:
+https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service?hl=en_US
+
+

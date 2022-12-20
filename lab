@@ -8,3 +8,11 @@
   echo "Hello World" > /var/www/html/index.html
 
 in mmanagemenbt section >> automation
+
+2. create one instance template and launch compute engine with instance template
+   install docker:
+     >apt install docker.io
+     
+   run docker run command to sgtart container:
+     >docker run -itd -p 81:80 ubuntu/apache2
+     

@@ -57,5 +57,7 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
  7. kubernetyes dashboard:
      https://github.com/kubernetes/dashboard
    
+8. deploy app with yml file:
+    kubectl apply -f k8s-nginx.yml
 
-
+9. deploy jenkinsserver in kubernetes

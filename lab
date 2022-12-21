@@ -61,3 +61,17 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
     kubectl apply -f k8s-nginx.yml
 
 9. deploy jenkinsserver in kubernetes
+
+
+10. app engine example:
+    1. launch  gcloud shell from gcp console
+    2. run this command:   gcloud app create
+    3. clone:
+         git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+    4.  cd python-docs-samples/appengine/standard_python3/building-an-app/building-an-app-1
+    5. deploy:
+       gcloud app deploy
+    6. open url:
+      gcloud app browse
+   7. Logs:
+        gcloud app logs tail -s default

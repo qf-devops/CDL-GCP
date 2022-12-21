@@ -111,3 +111,5 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
            INSERT INTO movies VALUE ("Joker", "psychological thriller", "Todd Phillips", 2019);
            INSERT INTO movies VALUE ("Joker1", "psychological thriller", "Todd Phillips", 2019);
    
+  15.  crete redis server with memorystore from gcp
+        connect redis using gcloud or aother apis/commands

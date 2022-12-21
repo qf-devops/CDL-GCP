@@ -93,3 +93,11 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
       1. create cloudstorage bucket using gcloud cli  : gcloud storage buckets create gs://cdlstoragestaging
       2. upload files to bucket using gcloud cli : gsutil cp README-cloudshell.txt gs://cdlstoragestaging/
       3. download filesto bucket using gcloud cli : gsutil cp gs://cdlstoragestaging/* .
+      
+  13. blankdisk need to add to compueengine
+       https://cloud.google.com/compute/docs/disks/add-persistent-disk#create_disk
+        create compuet engine
+        crate persistent disk
+        attached PD to instance
+        add filesystem
+        mopunt it or add mount configurstion in /etc/fstab.

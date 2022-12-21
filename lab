@@ -113,3 +113,5 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
    
   15.  crete redis server with memorystore from gcp
         connect redis using gcloud or aother apis/commands
+
+   16. what service account in GCP

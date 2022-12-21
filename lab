@@ -89,7 +89,7 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
   delete: 
     gcloud functions delete nodejs-http-function --gen2 --region us-central1
     
-    
-  1. create cloudstorage bucket using gcloud cli
-  2. upload files to bucket using gcloud cli
-  3. download filesto bucket using gcloud cli
+  12 . cloud stoarge creation:
+      1. create cloudstorage bucket using gcloud cli
+      2. upload files to bucket using gcloud cli
+      3. download filesto bucket using gcloud cli

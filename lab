@@ -75,3 +75,16 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
       gcloud app browse
    7. Logs:
         gcloud app logs tail -s default
+        
+  11. cloud funtion:
+  
+  clone repo:  
+      git clone https://github.com/GoogleCloudPlatform/nodejs-docs-samples.git
+  switch to source code:  
+     cd nodejs-docs-samples/functions/helloworld/helloworldGet/
+  create:  
+     gcloud functions deploy nodejs-http-function --gen2 --runtime=nodejs16 --region=us-central1 --source=. --entry-point=helloGET --trigger-http --allow-unauthenticated
+  test: 
+    curl -m 70 -X POST https://nodejs-http-function-divip4tqfa-uc.a.run.app     -H "Authorization: bearer $(gcloud auth print-identity-token)"     -H "Content-Type: application/json"     -d '{}'
+  delete: 
+    gcloud functions delete nodejs-http-function --gen2 --region us-central1

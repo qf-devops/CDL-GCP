@@ -88,3 +88,8 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
     curl -m 70 -X POST https://nodejs-http-function-divip4tqfa-uc.a.run.app     -H "Authorization: bearer $(gcloud auth print-identity-token)"     -H "Content-Type: application/json"     -d '{}'
   delete: 
     gcloud functions delete nodejs-http-function --gen2 --region us-central1
+    
+    
+  1. create cloudstorage bucket using gcloud cli
+  2. upload files to bucket using gcloud cli
+  3. download filesto bucket using gcloud cli

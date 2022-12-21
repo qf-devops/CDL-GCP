@@ -101,3 +101,6 @@ https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-ser
         attached PD to instance
         add filesystem
         mopunt it or add mount configurstion in /etc/fstab.
+   14.  create cloud sql service with postgresql
+        connect created database to run sql queries.
+   

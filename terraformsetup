@@ -1,4 +1,4 @@
-1. install terraform in vm.
+1. install terraform in ubuntu vm.
 https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli
 choose linux option to install terraform command.
 

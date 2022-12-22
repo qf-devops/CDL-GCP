@@ -1,0 +1,49 @@
+1. install terraform in vm.
+https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli
+choose linux option to install terraform command.
+
+2. create service account in gcp console.
+
+https://console.cloud.google.com/apis/credentials/serviceaccountkey
+
+steps:
+  https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-build
+  
+  download json file to vm .
+  
+3. create a directory:
+    mkdir learn-terraform-gcp
+4. cd learn-terraform-gcp
+5.touch main.tf
+copy below content to main.tf:
+          terraform {
+          required_providers {
+            google = {
+              source = "hashicorp/google"
+              version = "3.5.0"
+            }
+          }
+        }
+
+        provider "google" {
+          credentials = file("<NAME>.json")
+
+          project = "<PROJECT_ID>"
+          region  = "us-central1"
+          zone    = "us-central1-c"
+        }
+
+        resource "google_compute_network" "vpc_network" {
+          name = "terraform-network"
+        }
+   
+   6. set path <NAME>.json to abc.json   and chnage project value here:  <PROJECT_ID>" in main.tf
+   
+   7. copy json file to abc.json
+   
+   8. terraform init
+   9. terraform plan
+   10. terraform apply
+   11. check resources created or not in console.
+   12. terraform destroy
+   
